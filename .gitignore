@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.turbo/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Native binaries (Phase 1 Rust/C++)
+target/
+*.node
+*.so
+*.dylib
+
+# Secrets — NEVER COMMIT
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# Edge server local data
+edge-data/
+local-db/
+*.sqlite
+*.db
+
+# OS
+Thumbs.db
