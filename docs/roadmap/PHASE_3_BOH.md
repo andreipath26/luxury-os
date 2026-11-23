@@ -26,3 +26,11 @@ Kitchen staff validate lifecycle, routing, allergy visibility and corrections. I
 
 Gate: selected service workflow remains safe when wearables or connectivity fail.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- KDS station routing, timers and course pacing are established product capabilities. Focus differentiation on offline recovery, allergy provenance and audited transitions.
+- Model hold/fire/served as validated domain transitions; a CRDT must not authorize an invalid state transition.
+- Haptics are secondary cues. Require acknowledgement/escalation and visible fallback; keep KDS authoritative and test exact watch/phone/OS combinations for missed, delayed and duplicate alerts.
+- Test still images or short clips for plating guidance before adding a 3D content pipeline. Check existing hotel task-dispatch products before building butler dispatch.
+- Treat stagiaire/labor rules as jurisdiction- and contract-specific discovery, not a generic EU timer feature.

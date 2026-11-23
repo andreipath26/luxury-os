@@ -29,3 +29,11 @@ Test chosen languages/accents, noise, ambiguity, cancellation and handoff. Verif
 
 Gate: AI reduces measured workload while preserving guest choice, staff control and tested fallback; cross-property sync has independent privacy approval.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- Build a permissioned booking service and vendor API integration before adding A2A. A2A is optional interoperability for independent agents, not booking authorization or a PMS connector.
+- Start voice AI with a small set of demanded languages/intents, clear AI disclosure, booking confirmation, measured accuracy, and human fallback. EU AI Act transparency obligations for relevant direct interactions apply from 2 August 2026.
+- Treat GEO as an optional marketing experiment; standard SEO and useful, accurate content remain the baseline.
+- Define VIP data purposes, category-specific retention, tenant/property boundaries, access, residency and deletion propagation before global profile synchronization.
+- Multi-currency reporting needs accounting ownership, FX source/timing, rounding and reconciliation before consolidation.

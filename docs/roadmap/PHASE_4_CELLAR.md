@@ -26,3 +26,10 @@ Reconcile representative physical inventory; record accuracy, adjustments and on
 
 Gate: partner can maintain representative stock/cost data at agreed effort.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- Evaluate existing beverage-inventory systems such as BinWise and import/export options before building full cellar CRUD.
+- Start with searchable 2D bin/location records and barcode/mobile scanning. Make 3D navigation conditional on measured staff-task improvement and an affordable cellar-onboarding workflow.
+- Treat Coravin cartridge use as a consumables ledger unless supported integration access is confirmed.
+- Validate recipe units, batch yield, prep loss, portion weights and staff capture before promising gram-level contribution margins. Compare existing waste measurement systems before custom camera/scale development.

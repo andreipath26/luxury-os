@@ -27,3 +27,11 @@ Authorized sandbox path; end-to-end create/update/reconcile with test data; no d
 
 Gate: one partner workflow operates in supported and degraded modes. No reverse engineering or unsupported API dependency.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- Pick one design partner’s PMS and validate API credentials, property approval, sandbox, fees, scope, certification and supported version before committing to integration.
+- Treat OPERA/OHIP, Mews and Infor as separate adapter paths; SevenRooms, Resy and OpenTable are distinct reservation/guest integrations with access gates.
+- Define ownership for each field across hotel stay, restaurant cover/table/seat, guest identity and POS check. Add idempotency, retry, reconciliation, deletion, audit and human conflict handling before bi-directional sync.
+- Make the floor map a staff-tested 2D workflow first. Keep valet, coat check and car retrieval conditional on pilot demand.
+- Replace blanket post-visit deletion with retention schedules by data purpose/category, plus access controls, subject-rights handling and deletion propagation.

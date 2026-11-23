@@ -112,3 +112,8 @@ French beachhead assumptions, target lists, competition, pricing, ARR and hiring
 
 NF525, German TSE, PCI DSS and GDPR are not one platform-wide certification. Map obligations to product function, jurisdiction, operator and deployment model with qualified review. Resolve cash-register/payment scope before implementation.
 
+
+
+## Research reports (supplementary; roadmap text above is unchanged)
+
+- [Technology Fit Review — 2026-11-23](TECHNOLOGY_FIT_REVIEW.md): evidence-based assessment of repository state, technologies, software candidates, alternatives, risks, and proposed decision sequence.

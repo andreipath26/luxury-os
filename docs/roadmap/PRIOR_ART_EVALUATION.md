@@ -61,3 +61,38 @@ Search by technical primitive and workflow rather than broad “restaurant” qu
 Broad GitHub “Restaurant” searches surfaced tutorials, templates and marketing sites and were too noisy to establish market absence. The chat assessed chayxana/Restaurant-App as a cloud-microservices contrast, not local-first reuse. Generic web templates, teaching repos, taxi super-app, unrelated repositories, limited wine-cellar WordPress plugins and unrelated PMS samples were excluded as poor fits. SambaPOS-3 was kept for interface/state-flow study, not adoption.
 
 Remaining areas to research include bottle-level cellar inventory, sensor calibration/offline buffering, HACCP records/export and haptic notification. No candidate is adopted by this register.
+
+
+## Research findings and dispositions — 2026-11-23
+
+These findings refine the earlier chat-derived leads. They do not amend the exact roadmap. See [Technology Fit Review](TECHNOLOGY_FIT_REVIEW.md) for full rationale and sources.
+
+### Core and networking
+- **SQLite — retain as a pilot candidate.** Suitable for a local edge store; WAL is host-local and is not a multi-device/network-filesystem sync mechanism. Pair with an explicit transactional outbox and sync protocol.
+- **RxDB — conditional client-side candidate.** Appropriate only if TypeScript/browser/device clients need their own offline database. Select conflict handling deliberately; do not treat it as an automatic match for SQLite.
+- **CRDT tools — narrow use only.** Yjs/Automerge are collaboration primitives, not the domain workflow or authorization layer. Do not auto-merge orders, allergies, payments, ticket lifecycle or stock counts.
+- **Aether-Core — reference/experiment only.** Its linked repository describes a Python relay and states it is client-server, not peer-to-peer. Verify license, security, maintenance, recovery and runtime fit before reconsidering.
+- **Sietch — unverified.** The exact package/repository behind the chat’s Yjs/libp2p/post-quantum description is not established; do not count it as a qualified candidate.
+- **Bluetooth latency claim — update the technical understanding, not the preserved roadmap.** Bluetooth Core 6.2 adds a shorter-connection-interval feature down to 375 μs when supported by both endpoints. This is not proof of watch-level application latency; keep KDS authoritative and measure device/OS behavior.
+- **Rust — preferred default for new core code unless a concrete SDK requires C++.** TPM/Secure Enclave protect platform-supported keys/operations; they do not make arbitrary binaries extraction-proof.
+- **Edge HA — defer.** One appliance plus UPS, backups and tested replacement is a simpler baseline than an undefined dual-host design.
+
+### Hospitality integrations and workflow software
+- **OHIP, Mews Connector API and Infor HMS — qualify independently.** Confirm partner/property access, production approval, fees, API scope and version before scheduling. One design-partner adapter is the first useful deliverable.
+- **SevenRooms/Resy/OpenTable — partner-gated reservation systems.** Do not infer public API access or treat them as equivalent to a hotel PMS.
+- **Toast KDS — feature reference, not a dependency decision.** Station routing and course pacing are established functions; differentiation should focus on local-first operation, recovery and allergy/audit behavior.
+- **BinWise — existing wine/beverage inventory alternative.** Test integration/import and staff workflow before rebuilding cellar inventory. Prefer searchable 2D bins and scanning before 3D navigation.
+- **Aether/Sietch, KDS-for-Laravel, URY, KitchenOwl and SambaPOS — inspect selectively.** Treat as source/feature references until current maintenance, license, architecture and deployment fit are verified.
+
+### Operations, safety and AI
+- **HACCP — software supports operator evidence; it does not confer compliance.** Compare existing sensor/logging systems and verify calibration, corrective actions, export and offline mode.
+- **MICHELIN Key QA — rename the concept in product language.** Keys are qualitative inspector awards, not a software compliance checklist; use configurable hospitality QA without implying endorsement.
+- **Invoice OCR and waste measurement — buy/integrate before building.** Benchmark confidence, correction effort, accounting reconciliation and supplier-specific accuracy; use source-linked human review.
+- **FEFO — only after lot and expiry capture is dependable.** Start with receiving, traceability, alerts and human override.
+- **Payments/payouts — use authorized provider integrations.** Decide payment scope before NF525/TSE/PCI work; do not build payment rails or claim broad certification prematurely.
+- **A2A — optional interoperability layer.** Implement a permissioned booking API and audit first; add agent-to-agent support only for a customer/partner requirement.
+- **Voice AI — bounded pilot with disclosure and handoff.** Test real languages, noise, accents, booking correctness, consent, escalation and recovery before increasing language count or autonomy.
+- **GEO — experiment only.** Keep standard SEO and useful content as baseline; measure referral/conversion rather than treating metadata hacks as a committed product feature.
+- **VIP sync — privacy architecture gate.** Define purpose, retention, tenant isolation, access, residency and deletion propagation before cross-property profile sharing.
+
+No candidate in this register is adopted by these findings. Record tested version/date, license, access terms, measured fit, integration effort and rationale in an ADR before adding a dependency.

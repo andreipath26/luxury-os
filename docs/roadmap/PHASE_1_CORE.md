@@ -27,3 +27,12 @@ Staff demonstrate the workflow; report task completion/errors/feedback. Test pow
 
 Gate: a venue can run the slice through interruption/recovery, understand stale/conflicting data and restore service. Re-plan if unmet.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- Resolve SQLite versus RxDB as a runtime-specific choice before building. For a first edge pilot, favor a local SQLite store owned by one service with an outbox; WAL does not provide peer replication and must not be shared over network filesystems.
+- Limit CRDTs to data with safe merge semantics. Use versioned, authorized commands and explicit conflict handling for allergy, booking, order and ticket state.
+- Start with managed venue LAN and one edge appliance. Define latency separately for durable local commit, UI, LAN propagation, vendor API and watch alert.
+- Bluetooth Core 6.2 adds sub-millisecond connection intervals only on compatible endpoints; the earlier blanket BLE impossibility claim is outdated, but end-to-end smartwatch delivery still requires measurement.
+- Prefer Rust for new native/core logic unless a concrete dependency requires C++. Treat TPM/Secure Enclave as key-protection mechanisms; define enrollment, revocation, signed updates and recovery.
+- Rebaseline phase dates against the scaffold and pilot. The root README currently needs to state the same pre-alpha/no-application-code status as .github/README.md.

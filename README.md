@@ -37,7 +37,7 @@ See [`docs/roadmap/MASTER_ROADMAP.md`](docs/roadmap/MASTER_ROADMAP.md) for the c
 
 ## Status
 
-**Phase 1 in progress** — Local-First Core Architecture, Hardware Security, Dark OLED UI Core.
+**Status: Pre-alpha.** The repository contains the monorepo scaffold and planning documents; no application implementation is present yet. Phase 1 work is not evidenced as implemented in this repository. See [the technology fit review](docs/roadmap/TECHNOLOGY_FIT_REVIEW.md) for the current assessment.
 
 ## License
 

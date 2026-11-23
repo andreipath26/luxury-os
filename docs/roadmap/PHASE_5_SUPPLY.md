@@ -28,3 +28,12 @@ Trace selected goods through a recall-style lookup; measure OCR accuracy/correct
 
 Gate: partner demonstrates traceability and reliable records with manual fallback/export.
 
+
+
+## Technology fit update (supplementary; exact roadmap bullets above are unchanged)
+- FEFO requires reliable lot and expiry data at receiving; start with scan/capture, alerts, traceability and manual override before automated dispatch.
+- Invoice OCR must retain source documents, line-level confidence, human correction and supplier/tax/total reconciliation; integrate accounting/AP tools where feasible.
+- HACCP records support the food operator’s procedures; software does not itself make a venue compliant. Evaluate available temperature probe/logging systems, calibration, offline buffers, corrective actions and export.
+- MICHELIN Keys are qualitative awards, not a compliance checklist. Describe this as configurable hospitality QA without implying MICHELIN endorsement.
+- Use carrier feeds before custom freight GPS; use authorized payment providers for payouts; defer predictive maintenance until equipment telemetry and a maintenance workflow are available.
+- Map NF525, German TSE and PCI DSS by jurisdiction and payment/cash-register functions after deciding whether the product handles payments or integrates with a separate provider.
